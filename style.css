@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    /* margin-top: 30px; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+.container {
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;  x-axis - left to right 
+    align-items: center; y-axiz - top to bottom */
+    border: 4px solid green;
+    /* margin: 100px; */
+    display: grid;
+    place-content: center;
+    background-color: #999EAD;
+}
+
+.text {
+    border: 4px solid blue;
+    /* padding: 10px; */
+}
+
+#size {
+    border: 4px solid rgb(0, 255, 149);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    color: red;
+}
+
+/* Order of media queries should be evaulated from largest to smallest */
+
+/* desktop: 1200px */
+@media (max-width: 1200px) {
+    .container {
+        background-color: rgb(30, 130, 133);
+    }
+     
+}
+
+
+/* laptop: 992px */
+@media (max-width: 992px) {
+    .container {
+        background-color: rgb(145, 150, 163);
+    }
+     
+}
+
+
+/* tablet: 768px */
+@media (max-width: 768px) {
+    .container {
+        background-color: rgb(161, 149, 160);
+    }
+     
+}
+
+/* mobile: 576px */
+@media (max-width: 576px) {
+    .container {
+        background-color: black;
+    }
+     
+}
+
+
+/* List of common breakpoints
+1920×1080
+1366×768
+360×640
+414×896
+1536×864
+375×667
+
+Bootstrap breakpoints
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+
+Another recommendation for 4 devices:
+mobile: 576px
+tablet: 768px
+laptop: 992px
+desktop: 1200px
+*/
