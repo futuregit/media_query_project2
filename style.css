@@ -121,11 +121,59 @@ body {
 }
 
 /* mobile: 576px */
-@media (max-width: 576px) {
+@media (max-width: 650px) {
+
     .container {
-        /* background-color: black; */
+        background-color: #ffffff;
     }
-     
+    
+    .header {
+        justify-content: center;
+    }
+
+    .header__logo {
+        font-size: 40px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main__image {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background-size: 100%;
+        background-position: center;
+    }
+    
+    .main__text {
+        width: 100%;
+    }
+
+    .main__text-1 {
+        display: none;
+    }
+
+    .main__text-2, .main__text-3, .main__text-4 {
+        font-size: 30px;
+    }
+        
+    .footer {
+        justify-content: center;
+        margin: 0px;
+    }
+    
+    .footer__dribbble > img, .footer__github > img, .footer__linkedln > img, .footer__behance > img {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 
