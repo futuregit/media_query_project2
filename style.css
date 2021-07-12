@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 5px;
     /* margin-top: 30px; */
     padding: 0;
     box-sizing: border-box;
@@ -7,23 +7,83 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
+    /* font-size: 35px; */
 }
 
 .container {
     height: 100vh;
-    /* display: flex;
-    justify-content: center;  x-axis - left to right 
-    align-items: center; y-axiz - top to bottom */
-    border: 4px solid green;
-    /* margin: 100px; */
-    display: grid;
-    place-content: center;
-    background-color: #999EAD;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.header {
+    height: 10%;
+    /* border: 4px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 4vw;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5vw;
+    gap: 15px;
+}
+
+.main {
+    height: 80%;
+    /* border: 4px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.main__image {
+    background-image: url('./images/suit-869380-min.jpg');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+.main__text {
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__text-1 {
+    font-size: 10vw;
+}
+
+.main__text-2, .main__text-3, .main__text-4 {
+    font-size: 5vw;
+}
+
+.footer {
+    height: 10%;
+    /* border: 4px solid darkblue; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10%;;
+    gap: 20px;
+}
+
+.footer__dribbble > img, .footer__github > img, .footer__linkedln > img, .footer__behance > img {
+    width: 5.3vw;
 }
 
 #size {
-    border: 4px solid rgb(0, 255, 149);
+    /* border: 4px solid rgb(0, 255, 149); */
     position: absolute;
     top: 60%;
     left: 50%;
@@ -63,7 +123,7 @@ body {
 /* mobile: 576px */
 @media (max-width: 576px) {
     .container {
-        background-color: black;
+        /* background-color: black; */
     }
      
 }
